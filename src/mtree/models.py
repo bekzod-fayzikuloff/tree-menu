@@ -7,7 +7,6 @@ class Menu(models.Model):
     parent = models.ForeignKey("self", null=True, blank=True, on_delete=models.CASCADE)
 
     def _flatten_submenus(self) -> str:
-
         return " ".join(menu.title for menu in Menu.objects.filter(parent=self))
 
     @property
