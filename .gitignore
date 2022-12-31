@@ -1,0 +1,10 @@
+# Django project
+/media/
+/static/
+*.sqlite3
+
+# Python and others
+__pycache__
+*.pyc
+/.idea/
+.env
